@@ -1,5 +1,5 @@
 const senhaGerada = document.getElementById("senhaGerada");
-const rangeInput = document.getElementById("rangeSenha");
+const rangeInput = document.getElementById("rangeCarateresSenha");
 const caracteresSenha = document.getElementById("totalCarateresSenha");
 
 // funcao para sincronizar os valores do input range e input number
@@ -9,7 +9,7 @@ function atualizarValores() {
     gerarSenha();
 }
 
-// Evento para atualizar os valores do input range e input number
+// evento para atualizar os valores do input range e input number
 caracteresSenha.addEventListener("input", function () {
     const selectedValue = parseInt(caracteresSenha.value);
     rangeInput.value = selectedValue;
@@ -22,7 +22,7 @@ rangeInput.addEventListener("input", function () {
     gerarSenha();
 });
 
-// Evento para garantir que pelo menos um checkbox esteja selecionado
+// evento para garantir que pelo menos um checkbox esteja selecionado
 const checkboxes = document.querySelectorAll("input[type='checkbox']");
 checkboxes.forEach(checkbox => {
     checkbox.addEventListener("change", function () {
@@ -32,7 +32,7 @@ checkboxes.forEach(checkbox => {
     });
 });
 
-// Função para gerar a senha
+// função para gerar a senha
 function gerarSenha() {
     // Obter o comprimento da senha
     const length = parseInt(document.getElementById("totalCarateresSenha").value);

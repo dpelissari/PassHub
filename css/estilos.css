@@ -5,10 +5,11 @@ h1 {  text-transform:uppercase; }
 input[type=text] { width:100%; height:40px; font-size:28px; padding:0 15px; border:none; outline:0; border-radius:10px; }
 input[type=checkbox] { width:25px; height:25px; }
 input[type=number] { border-radius:10px; border:none; outline:0; height:40px; width:80px; font-size:20px; text-align:center; }
-input[type=range] { background:red;  }
+button { display:flex; align-items:center; justify-content:center; border:none; border-radius:50%; width:40px; height:40px; }
+button:hover { transform:scale(1.1); cursor:pointer; }
 
 .container { max-width:1200px; margin:0 auto; display:flex; align-items:center; height:100vh; }
-.card { padding:20px 40px; border-radius:15px; background:#333; display:flex; flex-direction:column; justify-content:center;  width:100%; box-sizing:border-box; }
+.card { padding:20px; border-radius:10px; background:#333; display:flex; flex-direction:column; justify-content:center;  width:100%; }
 
 .senha { display:flex; gap:10px; align-items:center; }
 .senha .acoes { display:flex; gap:10px; }
@@ -16,16 +17,15 @@ input[type=range] { background:red;  }
 .personalize { border:1px dashed #ddd; padding:20px; margin:40px 0; border-radius:10px;}
 .personalize div { display:flex; align-items:center; margin:20px 0; flex-wrap:wrap; }
 
-button { display:flex; align-items:center; justify-content:center; border:none; border-radius:50%; width:40px; height:40px; }
-button:hover { transform:scale(1.1); cursor:pointer; }
 .btn-nova-senha { background:#20BF55;  }
 .btn-nova-senha img { width:25px; }
 .btn-clipboard { background:#01BAEF;  }
 .btn-clipboard  img { width:20px; }
 
 @media (max-width:640px){
-    .personalize { margin:0; }
+    input[type=text] { font-size:20px;  }
     button { width:60px; height:60px; }
+    .personalize { margin:0; }
     .senha { flex-wrap:wrap; justify-content:center; }
     .senha .acoes { margin:20px 0; }
 }
