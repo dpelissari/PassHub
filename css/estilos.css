@@ -11,6 +11,7 @@ input[type=range] { background:red;  }
 .card { padding:20px 40px; border-radius:15px; background:#333; display:flex; flex-direction:column; justify-content:center;  width:100%; box-sizing:border-box; }
 
 .senha { display:flex; gap:10px; align-items:center; }
+.senha .acoes { display:flex; gap:10px; }
 .tamanho { display:flex; gap:10px; }
 .personalize { border:1px dashed #ddd; padding:20px; margin:40px 0; border-radius:10px;}
 .personalize div { display:flex; align-items:center; margin:20px 0; flex-wrap:wrap; }
@@ -21,3 +22,10 @@ button:hover { transform:scale(1.1); cursor:pointer; }
 .btn-nova-senha img { width:25px; }
 .btn-clipboard { background:#01BAEF;  }
 .btn-clipboard  img { width:20px; }
+
+@media (max-width:640px){
+    .personalize { margin:0; }
+    button { width:60px; height:60px; }
+    .senha { flex-wrap:wrap; justify-content:center; }
+    .senha .acoes { margin:20px 0; }
+}

@@ -12,12 +12,14 @@
         <h1>PassHub</h1>
         <div class="senha">
             <input type="text" readonly="true" id="senhaGerada">
-            <button onclick="gerarSenha()" class="btn-nova-senha">
-                <img src="icones/ico-atualizar.svg" alt="Icone gerar senha" />
-            </button>
-            <button onclick="copiarSenha()" class="btn-clipboard">
-                <img src="icones/ico-clipboard.svg" alt="Icone copiar senha" />
-            </button>
+            <div class="acoes">
+                <button onclick="gerarSenha()" class="btn-nova-senha">
+                    <img src="icones/ico-atualizar.svg" alt="Icone gerar senha" />
+                </button>
+                <button onclick="copiarSenha()" class="btn-clipboard">
+                    <img src="icones/ico-clipboard.svg" alt="Icone copiar senha" />
+                </button>
+            </div>
         </div>
         <div class="personalize">
             <h2>Personalizar senha: </h2>
@@ -28,19 +30,19 @@
             </div>
             <div>
                 <input type="checkbox" id="letrasMaiusculas" onchange="gerarSenha()" checked>
-                <label>Letras Maiusculas</label>
+                <label for="letrasMaiusculas">Letras Maiusculas</label>
             </div>
             <div>
                 <input type="checkbox" id="caracteresEspeciais" onchange="gerarSenha()" checked>
-                <label>Caracteres Especiais</label>
+                <label for="caracteresEspeciais">Caracteres Especiais</label>
             </div>
             <div>
                 <input type="checkbox" id="simbolos" onchange="gerarSenha()" checked>
-                <label>Simbolos</label>
+                <label for="simbolos">Simbolos</label>
             </div>
             <div>
                 <input type="checkbox" id="numeros" onchange="gerarSenha()" checked>
-                <label>Numeros</label>
+                <label for="numeros">Numeros</label>
             </div>
         </div>
     </div>
