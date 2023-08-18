@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassHub</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+        <h1>PassHub</h1>
+        <div class="senha">
+            <input type="text" readonly="true" id="senhaGerada">
+            <button onclick="gerarSenha()" class="btn-nova-senha">
+                <img src="icones/ico-atualizar.svg" alt="Icone gerar senha" />
+            </button>
+            <button onclick="copiarSenha()" class="btn-clipboard">
+                <img src="icones/ico-clipboard.svg" alt="Icone copiar senha" />
+            </button>
+        </div>
+        <div class="personalize">
+            <h2>Personalizar senha: </h2>
+            <div class="tamanho">
+                <label>Tamanho total: </label>
+                <input type="range" min="4" max="50" value="15" id="rangeSenha" oninput="atualizarValores()">
+                <input type="number" min="4" max="50" id="totalCarateresSenha" value="15" onchange="atualizarValores()">
+            </div>
+            <div>
+                <input type="checkbox" id="letrasMaiusculas" onchange="gerarSenha()" checked>
+                <label>Letras Maiusculas</label>
+            </div>
+            <div>
+                <input type="checkbox" id="caracteresEspeciais" onchange="gerarSenha()" checked>
+                <label>Caracteres Especiais</label>
+            </div>
+            <div>
+                <input type="checkbox" id="simbolos" onchange="gerarSenha()" checked>
+                <label>Simbolos</label>
+            </div>
+            <div>
+                <input type="checkbox" id="numeros" onchange="gerarSenha()" checked>
+                <label>Numeros</label>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

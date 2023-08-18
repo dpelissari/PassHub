@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;600&display=swap');
+
+body { background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(176,229,208,1) 42%, rgba(92,202,238,0.41) 93.6% ); font-family: 'Raleway', sans-serif; color:#FFF; }
+h1 {  text-transform:uppercase; }
+input[type=text] { width:100%; height:40px; font-size:28px; padding:0 15px; border:none; outline:0; border-radius:10px; }
+input[type=checkbox] { width:25px; height:25px; }
+input[type=number] { border-radius:10px; border:none; outline:0; height:40px; width:80px; font-size:20px; text-align:center; }
+input[type=range] { background:red;  }
+
+.container { max-width:1200px; margin:0 auto; display:flex; align-items:center; height:100vh; }
+.card { padding:20px 40px; border-radius:15px; background:#333; display:flex; flex-direction:column; justify-content:center;  width:100%;}
+
+.senha { display:flex; gap:10px; align-items:center; }
+.tamanho { display:flex; gap:10px; }
+.personalize { border:1px dashed #ddd; padding:20px; margin:40px 0; border-radius:10px;}
+.personalize div { display:flex; align-items:center; margin:20px 0;  }
+
+button { display:flex; align-items:center; justify-content:center; border:none; border-radius:50%; width:40px; height:40px; }
+button:hover { transform:scale(1.1); cursor:pointer; }
+.btn-nova-senha { background:#20BF55;  }
+.btn-nova-senha img { width:25px; }
+.btn-clipboard { background:#01BAEF;  }
+.btn-clipboard  img { width:20px; }
