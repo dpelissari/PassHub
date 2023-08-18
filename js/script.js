@@ -27,7 +27,7 @@ const checkboxes = document.querySelectorAll("input[type='checkbox']");
 checkboxes.forEach(checkbox => {
     checkbox.addEventListener("change", function () {
         if (!this.checked && !Array.from(checkboxes).some(c => c.checked)) {
-             his.checked = true; }
+             this.checked = true; }
         gerarSenha();
     });
 });

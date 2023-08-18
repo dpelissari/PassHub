@@ -8,12 +8,12 @@ input[type=number] { border-radius:10px; border:none; outline:0; height:40px; wi
 input[type=range] { background:red;  }
 
 .container { max-width:1200px; margin:0 auto; display:flex; align-items:center; height:100vh; }
-.card { padding:20px 40px; border-radius:15px; background:#333; display:flex; flex-direction:column; justify-content:center;  width:100%;}
+.card { padding:20px 40px; border-radius:15px; background:#333; display:flex; flex-direction:column; justify-content:center;  width:100%; box-sizing:border-box; }
 
 .senha { display:flex; gap:10px; align-items:center; }
 .tamanho { display:flex; gap:10px; }
 .personalize { border:1px dashed #ddd; padding:20px; margin:40px 0; border-radius:10px;}
-.personalize div { display:flex; align-items:center; margin:20px 0;  }
+.personalize div { display:flex; align-items:center; margin:20px 0; flex-wrap:wrap; }
 
 button { display:flex; align-items:center; justify-content:center; border:none; border-radius:50%; width:40px; height:40px; }
 button:hover { transform:scale(1.1); cursor:pointer; }
